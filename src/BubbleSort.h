@@ -6,7 +6,7 @@
  */
 
 
-
+#include "util.h"
 
 void BubbleSort(int a[], int n) {
 	int i, j;
@@ -14,11 +14,10 @@ void BubbleSort(int a[], int n) {
 		for(j=1; j<n-1; j++) {
 			if(a[j-1] > a[j]) {
 				//swap(a[j-1], a[j]);  //TODO
-
+//				swap(&a[j-1], &a[j]);
 			}
 
 		}
 
 	}
-
 }
