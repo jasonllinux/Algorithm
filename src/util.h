@@ -13,18 +13,7 @@
 #define GET_ARRAY_LEN(array,len){len = (sizeof(array) / sizeof(array[0]));}
 
 //交换数组中的两个数
-void swap(int *a, int *b) {
-	int tmp;
-	tmp = *a;
-	*a = *b;
-	*b = tmp;
-}
-
-//获取数组的长度
-int getLength(int* a) {
-
-	return 0;
-}
+void swap(int *a, int *b);
 
 
 #endif /* UTIL_H_ */

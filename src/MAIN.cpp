@@ -6,17 +6,20 @@
  */
 
 #include <iostream>
-//#include "BubbleSort.h"
+
+#include "Sort.h"
 
 using namespace std;
 
-void BubbleSort(int a[], int n);
 void testBubbleSort();
+void testQuickSort();
 void testPointerSize();
+void testSize();
 
 int main(void) {
 	testBubbleSort();
 	testPointerSize();
+	testSize();
 	return 0;
 }
 
@@ -24,24 +27,17 @@ void testBubbleSort() {
 	cout<<"Test Bubble Sort.................."<<endl;
 	int data[] = {1, 8, 5, 98, 56, 88,};
 	//	cout<<"Hello World! \n";
-		BubbleSort(data, 6);
+		bubbleSort1(data, 6);
 		for(int i=0; i<=6; i++) {
 			cout<<data[i]<<endl;
 		}
 }
 
-void BubbleSort(int a[], int n) {
-	int i, j;
-	for(i=0; i<n; i++) {
-		for(j=1; j<=n-1; j++) {
-			if(a[j-1] > a[j]) {
-//				cout<<"µ÷»»ÏÂ";
-				swap(a[j-1], a[j]);  //TODO
-//				swap(&a[j-1], &a[j]);
-			}
-		}
-	}
+void testQuickSort() {
+
 }
+
+
 
 
 void testPointerSize() {
@@ -54,5 +50,18 @@ void testPointerSize() {
 	cout << sizeof(int *) <<endl;
 }
 
+
+void testSize() {
+	cout<<"Test Size.................."<<endl;
+	cout << "double "<<endl;
+	cout << sizeof(double) <<endl;
+	cout << "Float "<<endl;
+	cout << sizeof(float) <<endl;
+	cout << "Integer "<<endl;
+	cout << sizeof(int) <<endl;
+	cout << "Char "<<endl;
+	cout << sizeof(char) <<endl;
+
+}
 
 
