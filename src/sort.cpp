@@ -6,7 +6,7 @@
  */
 
 
-#include "Sort.h"
+#include "sort.h"
 #include "util.h"
 
 void bubbleSort1(int a[], int n) {

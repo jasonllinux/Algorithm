@@ -7,7 +7,7 @@
 
 #include <iostream>
 
-#include "Sort.h"
+#include "sort.h"
 
 using namespace std;
 
@@ -29,15 +29,14 @@ void testBubbleSort() {
 	//	cout<<"Hello World! \n";
 		bubbleSort1(data, 6);
 		for(int i=0; i<=6; i++) {
-			cout<<data[i]<<endl;
+			cout<<data[i]<<",";
 		}
+		cout<<endl;
 }
 
 void testQuickSort() {
 
 }
-
-
 
 
 void testPointerSize() {
